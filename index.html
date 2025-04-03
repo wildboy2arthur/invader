@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外星入侵者</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div id="main-menu" class="screen">
+            <h1>外星入侵者</h1>
+            <button id="start-button">開始遊戲</button>
+            <button id="settings-button">設置</button>
+            <div class="author-credit">by Arthur Chen</div>
+        </div>
+        
+        <div id="game-screen" class="screen hidden">
+            <canvas id="game-canvas"></canvas>
+            <div class="game-info">
+                <div id="score">分數: 0</div>
+                <div id="lives">生命: 3</div>
+            </div>
+        </div>
+        
+        <div id="game-over" class="screen hidden">
+            <h2>遊戲結束</h2>
+            <div id="final-score">最終分數: 0</div>
+            <button id="replay-button">再玩一次</button>
+            <button id="menu-button">返回主菜單</button>
+            <div class="author-credit">by Arthur Chen</div>
+        </div>
+
+        <div id="settings-screen" class="screen hidden">
+            <h2>設置</h2>
+            <div class="setting-item">
+                <label for="sound-toggle">音效</label>
+                <input type="checkbox" id="sound-toggle" checked>
+            </div>
+            <div class="setting-item">
+                <label for="music-toggle">音樂</label>
+                <input type="checkbox" id="music-toggle" checked>
+            </div>
+            <button id="back-button">返回</button>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
